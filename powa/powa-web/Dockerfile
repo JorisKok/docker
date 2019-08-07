@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     && pip install --upgrade pip \
     && pip install --upgrade setuptools \
     && pip install powa-web==3.2.0 \
-    && apt-get purge -y --auto-remove libpq-dev python3-dev python3-pip \
+    && apt-get purge -y --auto-remove libpq-dev python-dev python-pip \
     && rm -rf /var/lib/apt/lists/*
 
 COPY powa-web.conf /etc/
